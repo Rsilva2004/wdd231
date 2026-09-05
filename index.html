@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rafael Aranha's WDD 231 course home page featuring web development courses and personal information.">
+    <title>Rafael | WDD 231</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Rafael Aranha</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Chamber Project</a></li>
+                <li><a href="contact.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+          <h1>Home</h1>
+
+        <div class="home-grid">
+
+            <section class="about">
+                <h2>About Me</h2>
+
+                <div class="section-content">
+                    <p>
+                        My name is Rafael and I am a Software Development student.
+                        I enjoy programming, technology, games, music, and learning
+                        new things. I am currently developing my skills in web
+                        development and programming.
+                    </p>
+                </div>
+            </section>
+
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+
+                <div class="photo-container">
+                    <img
+                        src="images/rafael.jpg"
+                        alt="Photo of Rafael"
+                    >
+                </div>
+            </section>
+
+        </div>
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-buttons">
+                <button id="all-button">All</button>
+                <button id="cse-button">CSE</button>
+                <button id="wdd-button">WDD</button>
+            </div>
+
+            <div id="course-container"></div>
+
+            <p class="credits">
+                The total credits for courses listed above is
+                <span id="total-credits">0</span>
+            </p>
+        </section>
+
+    </main>
+    <footer>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/rafael-bruno-a02a173a3" aria-label="LinkedIn">In</a>
+            <a href="https://github.com/Rsilva2004" aria-label="GitHub">GitHub</a>
+        </div>
+
+        <p>
+            © <span id="currentyear"></span> • Rafael • Bahia, Brazil
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+    </main>
+</body>
+

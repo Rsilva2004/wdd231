@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #222;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    color: #222;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+#menu-button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    border-top: 1px solid #444;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #444;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0.5rem 0 1rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.4rem;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    font-size: 1rem;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.about,
+.student-photo,
+.courses-section {
+    border: 1px solid #ddd;
+}
+
+.section-content {
+    background-color: #eeeeee;
+    padding: 1rem;
+    min-height: 180px;
+}
+
+.section-content p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.photo-container {
+    background-color: #eeeeee;
+    padding: 1rem;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-container img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.courses-section {
+    margin-top: 1rem;
+}
+
+.course-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.course-buttons button {
+    padding: 0.5rem;
+    border: 1px solid #222;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.course-buttons button:hover {
+    background-color: #bbb;
+}
+
+#course-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.course-card {
+    padding: 0.7rem;
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.course-card.completed {
+    background-color: #b9d8c2;
+    border: 2px solid #276738;
+}
+
+.course-card.completed::after {
+    content: " ✓ Completed";
+    font-weight: 700;
+}
+
+.credits {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0.8rem;
+}
+
+footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.social-links a:hover {
+    background-color: #555;
+}
+
+footer p {
+    margin: 0.4rem;
+    font-size: 0.85rem;
+}

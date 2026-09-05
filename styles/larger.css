@@ -1,0 +1,51 @@
+@media screen and (min-width: 640px) {
+
+    #menu-button {
+        display: none;
+    }
+
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        background-color: #333;
+    }
+
+    nav a {
+        border: none;
+        padding: 0.8rem 1.5rem;
+    }
+
+    nav a:hover,
+    nav a.active {
+        background-color: #555;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .section-content,
+    .photo-container {
+        min-height: 200px;
+    }
+
+    .course-buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #course-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course-card {
+        min-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
