@@ -74,9 +74,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background-color: #008c6e;
+    background-color: #00705a;
 }
-
 
 /* =========================
    Main
