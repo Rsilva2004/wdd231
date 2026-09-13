@@ -1,0 +1,55 @@
+@media screen and (min-width: 700px) {
+
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav a {
+        padding: 1rem 1.25rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+
+    #members-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+    #members-container.list .member-card {
+        width: 100%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        text-align: left;
+        align-items: start;
+    }
+
+    .social-links {
+        margin: 0;
+        align-items: center;
+    }
+}

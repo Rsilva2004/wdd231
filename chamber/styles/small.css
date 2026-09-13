@@ -1,0 +1,226 @@
+/* =========================
+   General
+========================= */
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f7f8;
+    color: #1f2933;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    background-color: #005a8d;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 700;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    color: #005a8d;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 1rem;
+    text-align: center;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #008c6e;
+}
+
+
+/* =========================
+   Main
+========================= */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* =========================
+   View Buttons
+========================= */
+
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.view-buttons button {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #005a8d;
+    background-color: white;
+    color: #005a8d;
+    cursor: pointer;
+}
+
+.view-buttons button:hover {
+    background-color: #005a8d;
+    color: white;
+}
+
+
+/* =========================
+   Members Grid
+========================= */
+
+#members-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+/* =========================
+   Member Card
+========================= */
+
+.member-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.member-card h2 {
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+}
+
+.member-card img {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 0.75rem;
+}
+
+.member-card p {
+    margin: 0.35rem 0;
+    font-size: 0.9rem;
+}
+
+.member-card a {
+    color: #005a8d;
+    font-weight: 500;
+}
+
+
+/* =========================
+   List View
+========================= */
+
+#members-container.list {
+    display: flex;
+    flex-direction: column;
+}
+
+#members-container.list .member-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+#members-container.list .member-card img {
+    width: 100px;
+    height: 80px;
+    margin: 0;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #005a8d;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    font-size: 1.1rem;
+}
+
+footer p {
+    margin: 0.4rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}

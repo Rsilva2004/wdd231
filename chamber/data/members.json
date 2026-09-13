@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Camaçari Business Center",
+        "address": "Camaçari, Bahia, Brazil",
+        "phone": "(71) 3000-0001",
+        "website": "https://example1.com",
+        "image": "business1.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Bahia Tech Solutions",
+        "address": "Camaçari, Bahia, Brazil",
+        "phone": "(71) 3000-0002",
+        "website": "https://example2.com",
+        "image": "business2.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Camaçari Auto Center",
+        "address": "Camaçari, Bahia, Brazil",
+        "phone": "(71) 3000-0003",
+        "website": "https://example3.com",
+        "image": "business3.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Costa do Sol Restaurant",
+        "address": "Camaçari, Bahia, Brazil",
+        "phone": "(71) 3000-0004",
+        "website": "https://example4.com",
+        "image": "business4.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Camaçari Office Services",
+        "address": "Camaçari, Bahia, Brazil",
+        "phone": "(71) 3000-0005",
+        "website": "https://example5.com",
+        "image": "business5.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Bahia Construction Group",
+        "address": "Camaçari, Bahia, Brazil",
+        "phone": "(71) 3000-0006",
+        "website": "https://example6.com",
+        "image": "business6.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Camaçari Digital",
+        "address": "Camaçari, Bahia, Brazil",
+        "phone": "(71) 3000-0007",
+        "website": "https://example7.com",
+        "image": "business7.jpg",
+        "membership": 1
+    }
+]
