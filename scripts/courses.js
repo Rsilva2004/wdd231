@@ -43,9 +43,9 @@ const courses = [
     }
 ];
 
-
 const courseContainer = document.querySelector("#course-container");
 const totalCredits = document.querySelector("#total-credits");
+const courseDetailsDialog = document.querySelector("#course-details");
 
 
 function displayCourses(courseList) {
@@ -65,6 +65,10 @@ function displayCourses(courseList) {
         card.innerHTML = `
             ${course.subject} ${course.number}
         `;
+
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
 
         courseContainer.appendChild(card);
     });
@@ -102,6 +106,25 @@ document.querySelector("#wdd-button").addEventListener("click", () => {
 
     displayCourses(wddCourses);
 });
+
+
+function displayCourseDetails(course) {
+
+    courseDetailsDialog.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+    `;
+
+    courseDetailsDialog.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+
+    closeModal.addEventListener("click", () => {
+        courseDetailsDialog.close();
+    });
+}
 
 
 displayCourses(courses);

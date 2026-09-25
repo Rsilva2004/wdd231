@@ -1,0 +1,23 @@
+
+<button id="open">see message</button>
+
+<dialog id="modal">
+    <h2>🕷️ Peter!</h2>
+    <p>Green Goblin is attacking!</p>
+
+    <button id="close">Close</button>
+</dialog>
+
+<script>
+    const modal = document.querySelector("#modal");
+const abrir = document.querySelector("#open");
+const fechar = document.querySelector("#close");
+
+abrir.addEventListener("click", () => {
+    modal.showModal();
+});
+
+fechar.addEventListener("click", () => {
+    modal.close();
+});
+</script>
