@@ -29,12 +29,9 @@
         font-size: 2.5rem;
     }
 
-
     #members-container {
         grid-template-columns: repeat(3, 1fr);
     }
-
-
 
     #members-container.list .member-card {
         width: 100%;
@@ -52,54 +49,55 @@
         margin: 0;
         align-items: center;
     }
-}
-
-/* =========================
-   Join Page - Large Screens
-========================= */
-
-.join-layout {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    align-items: start;
-}
-
-.join-form-section,
-.membership-levels {
-    padding: 2rem;
-}
 
 
-/* =========================
-   Membership Form
-========================= */
+    /* =========================
+       Join Page - Large Screens
+    ========================= */
 
-.join-form-section form {
-    gap: 1.25rem;
-}
+    .join-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
 
-.join-form-section input[type="submit"] {
-    width: fit-content;
-    padding: 0.8rem 2rem;
-}
+    .join-form-section,
+    .membership-levels {
+        padding: 2rem;
+    }
+
+    .join-form-section form {
+        gap: 1.25rem;
+    }
+
+    .join-form-section input[type="submit"] {
+        width: fit-content;
+        padding: 0.8rem 2rem;
+    }
+
+    .membership-levels {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .membership-card {
+        padding: 1.5rem;
+    }
+
+    .membership-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
 
-/* =========================
-   Membership Cards
-========================= */
+    /* =========================
+       Thank You Page - Large Screens
+    ========================= */
 
-.membership-levels {
-    display: flex;
-    flex-direction: column;
-}
+    .thank-you {
+        padding: 3rem;
+    }
 
-.membership-card {
-    padding: 1.5rem;
-}
-
-.membership-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
