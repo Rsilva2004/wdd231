@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Camaçari Chamber of Commerce | Join</title>
+
+    <meta name="description"
+        content="Apply to join the Camaçari Chamber of Commerce and discover membership opportunities for local businesses.">
+
+    <meta property="og:title" content="Camaçari Chamber of Commerce | Join">
+    <meta property="og:description"
+        content="Apply to join the Camaçari Chamber of Commerce and discover membership opportunities for local businesses.">
+    <meta property="og:image"
+        content="https://rsilva2004.github.io/wdd231/chamber/images/camacari.jpg">
+    <meta property="og:url"
+        content="https://rsilva2004.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <meta name="author" content="Rafael Aranha">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/join.mjs"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+
+            <div class="brand">
+                <div class="logo" aria-hidden="true">C</div>
+                <span>Camaçari Chamber of Commerce</span>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="main-nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="directory.html">Directory</a>
+
+            <a href="join.html" class="active">Join</a>
+
+            <a href="discover.html">Discover</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h1>Join the Camaçari Chamber of Commerce</h1>
+
+        <div class="join-layout">
+
+            <!-- MEMBERSHIP APPLICATION FORM -->
+
+            <section class="join-form-section">
+
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html">
+
+                    <label for="first-name">
+                        First Name
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first-name"
+                            title="Enter your first name."
+                            autocomplete="given-name"
+                            required>
+                    </label>
+
+
+                    <label for="last-name">
+                        Last Name
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last-name"
+                            title="Enter your last name."
+                            autocomplete="family-name"
+                            required>
+                    </label>
+
+
+                    <label for="organization-title">
+                        Organizational Title
+                        <input
+                            type="text"
+                            id="organization-title"
+                            name="organization-title"
+                            title="Enter your organizational title. Use at least seven letters, spaces, or hyphens."
+                            autocomplete="organization-title"
+                            pattern="[A-Za-zÀ-ÿ\s-]{7,}">
+                    </label>
+
+
+                    <label for="email">
+                        Email Address
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            title="Enter your email address."
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
+                    </label>
+
+
+                    <label for="phone">
+                        Mobile Phone Number
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            title="Enter your mobile phone number."
+                            autocomplete="tel"
+                            required>
+                    </label>
+
+
+                    <label for="organization">
+                        Business / Organization Name
+                        <input
+                            type="text"
+                            id="organization"
+                            name="organization"
+                            title="Enter your business or organization name."
+                            autocomplete="organization"
+                            required>
+                    </label>
+
+
+                    <fieldset>
+
+                        <legend>Membership Level</legend>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="np"
+                                required>
+                            NP Membership
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="bronze">
+                            Bronze Membership
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="silver">
+                            Silver Membership
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="gold">
+                            Gold Membership
+                        </label>
+
+                    </fieldset>
+
+
+                    <label for="description">
+                        Business / Organization Description
+                        <textarea
+                            id="description"
+                            name="description"
+                            title="Describe your business or organization."></textarea>
+                    </label>
+
+
+                    <input
+                        type="hidden"
+                        id="timestamp"
+                        name="timestamp">
+
+
+                    <input
+                        type="submit"
+                        value="Submit Application">
+
+                </form>
+
+            </section>
+
+
+            <!-- MEMBERSHIP LEVEL CARDS -->
+
+            <section class="membership-levels">
+
+                <h2>Membership Levels</h2>
+
+
+                <article class="membership-card">
+
+                    <h3>NP Membership</h3>
+
+                    <p>For non-profit organizations.</p>
+
+                    <button
+                        type="button"
+                        class="modal-link"
+                        data-modal="np-modal">
+                        Learn More
+                    </button>
+
+                </article>
+
+
+                <article class="membership-card">
+
+                    <h3>Bronze Membership</h3>
+
+                    <p>Basic benefits for growing businesses.</p>
+
+                    <button
+                        type="button"
+                        class="modal-link"
+                        data-modal="bronze-modal">
+                        Learn More
+                    </button>
+
+                </article>
+
+
+                <article class="membership-card">
+
+                    <h3>Silver Membership</h3>
+
+                    <p>Expanded benefits and promotional opportunities.</p>
+
+                    <button
+                        type="button"
+                        class="modal-link"
+                        data-modal="silver-modal">
+                        Learn More
+                    </button>
+
+                </article>
+
+
+                <article class="membership-card">
+
+                    <h3>Gold Membership</h3>
+
+                    <p>Premium benefits and maximum visibility.</p>
+
+                    <button
+                        type="button"
+                        class="modal-link"
+                        data-modal="gold-modal">
+                        Learn More
+                    </button>
+
+                </article>
+
+            </section>
+
+        </div>
+
+
+        <!-- MEMBERSHIP MODALS -->
+
+        <dialog id="np-modal">
+
+            <h2>NP Membership</h2>
+
+            <p>
+                NP Membership is designed for non-profit organizations
+                and has no membership fee.
+            </p>
+
+            <ul>
+                <li>Free membership</li>
+                <li>Networking opportunities</li>
+                <li>Access to chamber events</li>
+                <li>Business resources and training</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+
+        </dialog>
+
+
+        <dialog id="bronze-modal">
+
+            <h2>Bronze Membership</h2>
+
+            <p>
+                Bronze Membership provides essential benefits for
+                small and growing businesses.
+            </p>
+
+            <ul>
+                <li>Access to chamber events</li>
+                <li>Networking opportunities</li>
+                <li>Business training</li>
+                <li>Member discounts</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+
+        </dialog>
+
+
+        <dialog id="silver-modal">
+
+            <h2>Silver Membership</h2>
+
+            <p>
+                Silver Membership offers additional promotional and
+                business development opportunities.
+            </p>
+
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Event discounts</li>
+                <li>Additional business training</li>
+                <li>Promotional opportunities</li>
+                <li>Featured advertising opportunities</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+
+        </dialog>
+
+
+        <dialog id="gold-modal">
+
+            <h2>Gold Membership</h2>
+
+            <p>
+                Gold Membership provides premium benefits and
+                increased visibility for established businesses.
+            </p>
+
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Premium advertising opportunities</li>
+                <li>Home page spotlight opportunities</li>
+                <li>Priority event promotion</li>
+                <li>Premium networking opportunities</li>
+            </ul>
+
+            <button type="button" class="close-modal">
+                Close
+            </button>
+
+        </dialog>
+
+    </main>
+
+
+    <footer>
+
+        <div class="contact-info">
+
+            <h2>Camaçari Chamber of Commerce</h2>
+
+            <p>Camaçari, Bahia, Brazil</p>
+
+            <p>Email: info@camacari-chamber.org</p>
+
+            <p>Phone: (71) 0000-0000</p>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <a href="#" aria-label="YouTube">
+                YouTube
+            </a>
+
+            <a href="#" aria-label="Twitter">
+                Twitter
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                LinkedIn
+            </a>
+
+        </div>
+
+
+        <div class="development-info">
+
+            <p>WDD 231 Class Project</p>
+
+            <p>Rafael Aranha</p>
+
+            <p>
+                © <span id="currentyear"></span>
+                Camaçari Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+    </footer>
+
+
+    <script type="module" src="scripts/join.mjs"></script>
+
+</body>
+
+</html>
+```
