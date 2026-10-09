@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to choose a piano by comparing your budget, available space, experience, and musical goals.">
+    <meta name="author" content="Rafael Aranha">
+
+    <meta property="og:title" content="Piano Buying Guide | Piano Guide">
+    <meta property="og:description" content="Practical tips to help you choose your ideal piano.">
+    <meta property="og:type" content="website">
+
+    <title>Piano Buying Guide | Piano Guide</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="scripts/main.mjs"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Piano Guide</a>
+
+        <button id="menu-button" type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation">☰</button>
+
+        <nav id="primary-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="instruments.html">Pianos</a>
+            <a href="guide.html" aria-current="page">Guide</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="guide-page">
+        <section class="guide-intro">
+            <p class="eyebrow">YOUR MUSICAL JOURNEY</p>
+            <h1>How to Choose Your First Piano</h1>
+            <p>
+                Choosing a piano is an exciting step. The right instrument
+                depends on your budget, available space, experience, and
+                musical goals.
+            </p>
+        </section>
+
+        <section class="guide-section" aria-labelledby="piano-types-heading">
+            <h2 id="piano-types-heading">1. Acoustic or Digital?</h2>
+
+            <div class="guide-columns">
+                <article class="guide-card">
+                    <h3>Acoustic Piano</h3>
+                    <p>
+                        Acoustic pianos create sound through hammers striking
+                        strings. They are valued for their natural resonance
+                        and expressive touch.
+                    </p>
+                    <ul>
+                        <li>Rich, natural sound.</li>
+                        <li>Does not require electricity to play.</li>
+                        <li>Usually needs tuning and regular maintenance.</li>
+                        <li>Often heavier and more expensive.</li>
+                    </ul>
+                </article>
+
+                <article class="guide-card">
+                    <h3>Digital Piano</h3>
+                    <p>
+                        Digital pianos reproduce piano sounds electronically
+                        and often provide useful features for practice.
+                    </p>
+                    <ul>
+                        <li>Headphone support on many models.</li>
+                        <li>Usually requires less maintenance.</li>
+                        <li>Often easier to move and place at home.</li>
+                        <li>Can include recording and additional sounds.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="guide-section" aria-labelledby="budget-heading">
+            <h2 id="budget-heading">2. Consider Your Budget</h2>
+            <p>
+                Set a realistic budget before comparing models. Remember to
+                consider accessories, delivery, maintenance, and a suitable
+                bench when estimating the total cost.
+            </p>
+        </section>
+
+        <section class="guide-section" aria-labelledby="space-heading">
+            <h2 id="space-heading">3. Measure Your Available Space</h2>
+            <p>
+                Measure the area where you plan to place the instrument.
+                Acoustic pianos need enough room and may require professional
+                delivery, while many digital pianos offer more flexible setups.
+            </p>
+        </section>
+
+        <section class="guide-section" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">4. Think About Your Musical Goals</h2>
+            <p>
+                Beginners may prefer an accessible instrument with weighted
+                keys. More experienced players may prioritize touch response,
+                sound quality, pedals, connectivity, and performance features.
+            </p>
+        </section>
+
+        <section class="guide-section" id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Find Your Piano</h2>
+            <p>
+                Answer a few questions to receive a recommendation based on
+                your preferences.
+            </p>
+
+            <form action="recommendation.html" method="get" class="piano-form">
+                <div class="form-field">
+                    <label for="experience">Your experience</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select your experience</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="piano-type">Preferred piano type</label>
+                    <select id="piano-type" name="type" required>
+                        <option value="">Select a type</option>
+                        <option value="acoustic">Acoustic</option>
+                        <option value="digital">Digital</option>
+                        <option value="any">No preference</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="budget">Your budget</label>
+                    <select id="budget" name="budget" required>
+                        <option value="">Select a budget</option>
+                        <option value="entry">Entry-level</option>
+                        <option value="mid">Mid-range</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+
+                <button class="button" type="submit">Get My Recommendation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Piano Guide</p>
+        <nav aria-label="Footer navigation">
+            <a href="attributions.html">Attributions</a>
+            <a href="#" id="video-link">JavaScript Demonstration</a>
+        </nav>
+    </footer>
+</body>
+</html>

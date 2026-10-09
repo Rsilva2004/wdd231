@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover acoustic and digital pianos, explore their differences, and learn how to choose the right piano for you.">
+    <meta name="author" content="Rafael Aranha">
+
+    <meta property="og:title" content="Piano Guide | Discover Your Piano">
+    <meta property="og:description" content="Explore piano types and learn how to choose your ideal instrument.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/piano-hero.webp">
+
+    <title>Piano Guide | Discover Your Piano</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script type="module" src="scripts/main.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Piano Guide</a>
+
+        <button
+            id="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation">
+            ☰
+        </button>
+
+        <nav id="primary-navigation" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="instruments.html">Pianos</a>
+            <a href="guide.html">Guide</a>
+            <a href="guide.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+
+                <h1>Discover Your Piano</h1>
+
+                <p>
+                    Explore the world of pianos and find the instrument
+                    that matches your musical dreams.
+                </p>
+
+                <a class="button" href="instruments.html">
+                    Explore Pianos
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="images/piano-hero.webp"
+                    alt="A piano ready to be played"
+                    width="800"
+                    height="600"
+                    fetchpriority="high">
+            </div>
+        </section>
+
+        <section class="piano-types" aria-labelledby="piano-types-title">
+            <h2 id="piano-types-title">Explore Piano Types</h2>
+
+            <p>Every piano has its own sound, character, and purpose.</p>
+
+            <div class="type-cards">
+                <article class="type-card">
+                    <img
+                        src="images/acoustic-piano.webp"
+                        alt="Acoustic piano with traditional keys"
+                        width="600"
+                        height="400"
+                        loading="lazy">
+
+                    <h3>Acoustic Pianos</h3>
+
+                    <p>
+                        Discover the traditional sound created by
+                        hammers, strings, and wooden craftsmanship.
+                    </p>
+
+                    <a href="instruments.html#acoustic">
+                        Explore acoustic pianos
+                    </a>
+                </article>
+
+                <article class="type-card">
+                    <img
+                        src="images/digital-piano.webp"
+                        alt="Digital piano in a home music studio"
+                        width="600"
+                        height="400"
+                        loading="lazy">
+
+                    <h3>Digital Pianos</h3>
+
+                    <p>
+                        Learn about versatile instruments with modern
+                        features for practice and performance.
+                    </p>
+
+                    <a href="instruments.html#digital">
+                        Explore digital pianos
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="buying-guide" aria-labelledby="buying-guide-title">
+            <div>
+                <p class="eyebrow">MAKE THE RIGHT CHOICE</p>
+
+                <h2 id="buying-guide-title">Buying Your First Piano</h2>
+
+                <p>
+                    Not sure which piano is right for you?
+                    Learn about budgets, available space, key action,
+                    and the features that matter most.
+                </p>
+
+                <a class="button" href="guide.html">
+                    Read the Buying Guide
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Piano Guide</p>
+
+        <nav aria-label="Footer navigation">
+            <a href="attributions.html">Attributions</a>
+            <a href="#" id="video-link">JavaScript Demonstration</a>
+        </nav>
+    </footer>
+</body>
+</html>

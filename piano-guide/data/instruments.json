@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Yamaha CFX",
+        "type": "Acoustic Grand",
+        "brand": "Yamaha",
+        "keys": 88,
+        "price": "Premium",
+        "description": "A concert grand piano designed for professional performance."
+    },
+    {
+        "id": 2,
+        "name": "Steinway Model D",
+        "type": "Acoustic Grand",
+        "brand": "Steinway & Sons",
+        "keys": 88,
+        "price": "Premium",
+        "description": "A concert grand known for its expressive range and rich tone."
+    },
+    {
+        "id": 3,
+        "name": "Kawai GL-10",
+        "type": "Acoustic Grand",
+        "brand": "Kawai",
+        "keys": 88,
+        "price": "Premium",
+        "description": "A compact grand piano for homes and smaller performance spaces."
+    },
+    {
+        "id": 4,
+        "name": "Yamaha U1",
+        "type": "Acoustic Upright",
+        "brand": "Yamaha",
+        "keys": 88,
+        "price": "Premium",
+        "description": "An upright piano widely used for practice and music education."
+    },
+    {
+        "id": 5,
+        "name": "Kawai K-300",
+        "type": "Acoustic Upright",
+        "brand": "Kawai",
+        "keys": 88,
+        "price": "Premium",
+        "description": "An upright piano designed for expressive playing and durability."
+    },
+    {
+        "id": 6,
+        "name": "Yamaha B1",
+        "type": "Acoustic Upright",
+        "brand": "Yamaha",
+        "keys": 88,
+        "price": "Mid-range",
+        "description": "A compact upright option for home practice."
+    },
+    {
+        "id": 7,
+        "name": "Casio PX-S1100",
+        "type": "Digital",
+        "brand": "Casio",
+        "keys": 88,
+        "price": "Entry to mid-range",
+        "description": "A slim digital piano suited to home use and portability."
+    },
+    {
+        "id": 8,
+        "name": "Yamaha P-145",
+        "type": "Digital",
+        "brand": "Yamaha",
+        "keys": 88,
+        "price": "Entry to mid-range",
+        "description": "A straightforward digital piano for beginners and students."
+    },
+    {
+        "id": 9,
+        "name": "Roland FP-30X",
+        "type": "Digital",
+        "brand": "Roland",
+        "keys": 88,
+        "price": "Mid-range",
+        "description": "A portable digital piano with weighted keys and built-in speakers."
+    },
+    {
+        "id": 10,
+        "name": "Kawai ES120",
+        "type": "Digital",
+        "brand": "Kawai",
+        "keys": 88,
+        "price": "Mid-range",
+        "description": "A portable instrument for home practice and small performances."
+    },
+    {
+        "id": 11,
+        "name": "Yamaha Clavinova CLP-845",
+        "type": "Digital Console",
+        "brand": "Yamaha",
+        "keys": 88,
+        "price": "Premium",
+        "description": "A home digital piano designed to offer an acoustic-style playing experience."
+    },
+    {
+        "id": 12,
+        "name": "Roland LX-5",
+        "type": "Digital Console",
+        "brand": "Roland",
+        "keys": 88,
+        "price": "Premium",
+        "description": "A cabinet-style digital piano for home musicians."
+    },
+    {
+        "id": 13,
+        "name": "Korg B2",
+        "type": "Digital",
+        "brand": "Korg",
+        "keys": 88,
+        "price": "Entry to mid-range",
+        "description": "A digital piano focused on essential sounds and everyday practice."
+    },
+    {
+        "id": 14,
+        "name": "Casio CDP-S110",
+        "type": "Digital",
+        "brand": "Casio",
+        "keys": 88,
+        "price": "Entry-level",
+        "description": "A compact digital piano for beginners with limited space."
+    },
+    {
+        "id": 15,
+        "name": "Nord Piano 5",
+        "type": "Stage Piano",
+        "brand": "Nord",
+        "keys": 88,
+        "price": "Premium",
+        "description": "A performance-focused stage piano for live musicians."
+    }
+]

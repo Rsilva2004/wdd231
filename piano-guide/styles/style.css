@@ -1,0 +1,547 @@
+/* =========================
+   1. DESIGN SYSTEM
+========================= */
+
+:root {
+    --color-dark: #1f2937;
+    --color-ivory: #f5f1e8;
+    --color-white: #ffffff;
+    --color-gold: #c9a227;
+    --color-text: #252525;
+    --color-muted: #555555;
+
+    --font-heading: Georgia, "Times New Roman", serif;
+    --font-body: Arial, Helvetica, sans-serif;
+
+    --content-width: 1200px;
+}
+
+/* =========================
+   2. RESET AND BASE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--color-ivory);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 4px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-dark);
+    font-family: var(--font-heading);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2.3rem, 5vw, 4.5rem);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+
+p {
+    max-width: 65ch;
+}
+
+/* =========================
+   3. HEADER AND NAVIGATION
+========================= */
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem max(1.25rem, calc((100% - var(--content-width)) / 2));
+    background: var(--color-dark);
+    color: var(--color-white);
+}
+
+.logo {
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#menu-button {
+    display: none;
+}
+
+#primary-navigation {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#primary-navigation a,
+footer a {
+    text-decoration: none;
+}
+
+#primary-navigation a {
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+#primary-navigation a:hover,
+#primary-navigation a[aria-current="page"] {
+    color: var(--color-gold);
+}
+
+/* =========================
+   4. HERO
+========================= */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    max-width: var(--content-width);
+    min-height: 520px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.hero-content {
+    padding: 1rem 0;
+}
+
+.hero-content > p:not(.eyebrow) {
+    font-size: 1.1rem;
+    color: var(--color-muted);
+}
+
+.eyebrow {
+    color: #705500;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.hero-image img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+/* =========================
+   5. BUTTONS
+========================= */
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.85rem 1.4rem;
+    border: 2px solid var(--color-dark);
+    border-radius: 0.35rem;
+    background: var(--color-dark);
+    color: var(--color-white);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 180ms ease;
+}
+
+.button:hover {
+    background: #37465a;
+}
+
+/* =========================
+   6. PIANO TYPES
+========================= */
+
+.piano-types {
+    padding: 4rem 2rem;
+    background: var(--color-white);
+    text-align: center;
+}
+
+.piano-types > h2,
+.piano-types > p {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.type-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 950px;
+    margin: 2.5rem auto 0;
+    text-align: left;
+}
+
+.type-card {
+    overflow: hidden;
+    border: 1px solid #dedede;
+    border-radius: 0.75rem;
+    background: var(--color-white);
+    box-shadow: 0 4px 14px rgb(0 0 0 / 7%);
+}
+
+.type-card img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.type-card h3,
+.type-card p,
+.type-card a {
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+}
+
+.type-card h3 {
+    margin-top: 1.25rem;
+}
+
+.type-card p {
+    color: var(--color-muted);
+}
+
+.type-card a {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #594300;
+    font-weight: bold;
+}
+
+/* =========================
+   7. BUYING GUIDE
+========================= */
+
+.buying-guide {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.buying-guide > div {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buying-guide p:not(.eyebrow) {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* =========================
+   8. FOOTER
+========================= */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5rem max(1.25rem, calc((100% - var(--content-width)) / 2));
+    background: var(--color-dark);
+    color: var(--color-white);
+}
+
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+footer a:hover {
+    color: var(--color-gold);
+}
+
+/* =========================
+   9. RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        padding: 1rem 1.25rem;
+    }
+
+    #menu-button {
+        display: block;
+        padding: 0.4rem 0.65rem;
+        border: 1px solid var(--color-white);
+        border-radius: 0.25rem;
+        background: transparent;
+        color: var(--color-white);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #primary-navigation {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+    }
+
+    #primary-navigation.open {
+        display: flex;
+    }
+
+    #primary-navigation a {
+        padding: 0.75rem 0;
+        border-top: 1px solid #526071;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        min-height: auto;
+        padding: 3rem 1.25rem;
+    }
+
+    .hero-image {
+        grid-row: 1;
+    }
+
+    .piano-types {
+        padding: 3rem 1.25rem;
+    }
+
+    .type-cards {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        gap: 1.5rem;
+    }
+
+    .buying-guide {
+        padding: 3.5rem 1.25rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem 1.25rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+
+/* =========================
+   INSTRUMENT CATALOG
+========================= */
+
+.catalog {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+}
+
+.catalog-intro {
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.catalog-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.catalog-controls select {
+    max-width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #777;
+    border-radius: 0.3rem;
+    background: var(--color-white);
+    color: var(--color-text);
+    font: inherit;
+}
+
+.instrument-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.instrument-card {
+    min-width: 0;
+    border: 1px solid #dedede;
+    border-radius: 0.65rem;
+    background: var(--color-white);
+    box-shadow: 0 4px 14px rgb(0 0 0 / 6%);
+}
+
+.instrument-card-content {
+    padding: 1.25rem;
+    overflow-wrap: anywhere;
+}
+
+.instrument-card h3 {
+    margin-top: 0.5rem;
+}
+
+.instrument-card p {
+    margin-bottom: 0.75rem;
+}
+
+.instrument-type {
+    color: #594300;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .instrument-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .catalog {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .instrument-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-controls {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .catalog-controls select {
+        width: 100%;
+    }
+}
+/* Guide and recommendation pages */
+.guide-page,
+.recommendation-page {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+}
+
+.guide-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.guide-section {
+    margin: 3rem 0;
+}
+
+.guide-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.guide-card,
+.recommendation-result {
+    padding: 1.5rem;
+    border: 1px solid #dedede;
+    border-radius: 0.65rem;
+    background: var(--color-white);
+    box-shadow: 0 4px 14px rgb(0 0 0 / 6%);
+}
+
+.piano-form {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 600px;
+    margin: 2rem auto 0;
+}
+
+.form-field {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.form-field label {
+    font-weight: bold;
+}
+
+.form-field select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #777;
+    border-radius: 0.3rem;
+    background: white;
+    color: var(--color-text);
+    font: inherit;
+}
+
+.piano-form .button {
+    justify-self: start;
+    cursor: pointer;
+}
+
+.recommendation-result {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+    .guide-page,
+    .recommendation-page {
+        padding: 2rem 1.25rem 3rem;
+    }
+
+    .guide-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .piano-form .button {
+        width: 100%;
+    }
+}

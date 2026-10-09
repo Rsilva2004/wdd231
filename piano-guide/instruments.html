@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore acoustic and digital pianos, compare their features, and discover instruments for different musical needs.">
+    <meta name="author" content="Rafael Aranha">
+
+    <meta property="og:title" content="Explore Pianos | Piano Guide">
+    <meta property="og:description" content="Compare piano types, features, and brands.">
+    <meta property="og:type" content="website">
+
+    <title>Explore Pianos | Piano Guide</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script type="module" src="scripts/instruments.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Piano Guide</a>
+
+        <button
+            id="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation">
+            ☰
+        </button>
+
+        <nav id="primary-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="instruments.html" aria-current="page">Pianos</a>
+            <a href="guide.html">Guide</a>
+            <a href="guide.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="catalog">
+        <section class="catalog-intro">
+            <p class="eyebrow">FIND YOUR SOUND</p>
+            <h1>Explore the Piano Collection</h1>
+            <p>
+                Compare instruments, discover different piano types,
+                and find the features that fit your musical journey.
+            </p>
+        </section>
+
+        <section aria-labelledby="catalog-title">
+            <h2 id="catalog-title">Our Instruments</h2>
+
+            <div class="catalog-controls">
+                <label for="type-filter">Filter by type</label>
+
+                <select id="type-filter">
+                    <option value="all">All instruments</option>
+                    <option value="acoustic">Acoustic pianos</option>
+                    <option value="digital">Digital pianos</option>
+                </select>
+            </div>
+
+            <p id="results-count" aria-live="polite"></p>
+
+            <div id="instrument-list" class="instrument-grid">
+                <p>Loading instruments...</p>
+            </div>
+            <dialog id="instrument-dialog" aria-labelledby="dialog-title">
+              <div class="dialog-content">
+                  <button id="close-dialog" type="button" aria-label="Close dialog">✕</button>
+                  <h2 id="dialog-title">Piano Details</h2>
+                  <div id="dialog-details"></div>
+              </div>
+            </dialog>
+
+            <p id="catalog-error" role="alert" hidden>
+                The instruments could not be loaded. Please try again later.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Piano Guide</p>
+
+        <nav aria-label="Footer navigation">
+            <a href="attributions.html">Attributions</a>
+            <a href="#" id="video-link">JavaScript Demonstration</a>
+        </nav>
+    </footer>
+</body>
+</html>
