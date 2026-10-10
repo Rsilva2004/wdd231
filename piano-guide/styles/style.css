@@ -2,6 +2,11 @@
    1. DESIGN SYSTEM
 ========================= */
 
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 :root {
     --color-dark: #1f2937;
     --color-ivory: #f5f1e8;
